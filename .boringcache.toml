@@ -1,5 +1,22 @@
 workspace = "boringcache/marty-core"
 
+[entries.cargo-target]
+kind = "cargo-target"
+tag = "cargo-target"
+path = "target"
+
+[profiles.dependencies]
+entries = ["cargo-registry-cache", "cargo-registry-index", "cargo-git-db"]
+
+[profiles.cargo]
+entries = ["cargo-registry-cache", "cargo-registry-index", "cargo-git-db", "cargo-target"]
+
+[adapters.cargo]
+profiles = ["cargo"]
+command = ["cargo", "nextest", "run", "--locked", "--workspace", "--exclude", "marty-zkp", "--exclude", "marty-bindings", "--features", "test-fixtures"]
+compiler-cache = "sccache"
+fail-on-cache-error = true
+
 [adapters.sccache]
-tag = "validation-series"
+tag = "rust"
 fail-on-cache-error = true
