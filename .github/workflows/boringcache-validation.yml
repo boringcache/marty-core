@@ -13,7 +13,7 @@ name: BoringCache validation
 permissions:
   contents: read
 concurrency:
-  group: boringcache-validation
+  group: boringcache-validation-${{ inputs.series || 'september-2026-sccache17' }}
   cancel-in-progress: false
 jobs:
   cold:
