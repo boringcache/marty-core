@@ -9,7 +9,7 @@ name: BoringCache validation
       series:
         description: Cache series shared by the seed, warm and rolling builds
         type: string
-        default: september-2026
+        default: september-2026-sccache17
 permissions:
   contents: read
 concurrency:
@@ -34,12 +34,14 @@ jobs:
         case:
         - workspace
     env:
-      VALIDATION_SERIES: ${{ inputs.series || 'september-2026' }}
+      VALIDATION_SERIES: ${{ inputs.series || 'september-2026-sccache17' }}
       VALIDATION_PROVIDER: ${{ matrix.provider }}
       VALIDATION_CASE: ${{ matrix.case }}
       VALIDATION_PHASE: cold
       CARGO_INCREMENTAL: '0'
       CARGO_TERM_COLOR: never
+      CC: sccache cc
+      CXX: sccache c++
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       with:
@@ -68,7 +70,7 @@ jobs:
         toolchain: 1.97.1
     - uses: taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7
       with:
-        tool: sccache@0.16.0,cargo-nextest@0.9.143
+        tool: sccache@0.17.0,cargo-nextest@0.9.143
     - name: Record compiler and dependency identity
       run: |
         rustc -Vv | tee "$RUNNER_TEMP/validation/rustc.txt"
@@ -139,12 +141,14 @@ jobs:
         case:
         - workspace
     env:
-      VALIDATION_SERIES: ${{ inputs.series || 'september-2026' }}
+      VALIDATION_SERIES: ${{ inputs.series || 'september-2026-sccache17' }}
       VALIDATION_PROVIDER: ${{ matrix.provider }}
       VALIDATION_CASE: ${{ matrix.case }}
       VALIDATION_PHASE: warm
       CARGO_INCREMENTAL: '0'
       CARGO_TERM_COLOR: never
+      CC: sccache cc
+      CXX: sccache c++
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
       with:
@@ -173,7 +177,7 @@ jobs:
         toolchain: 1.97.1
     - uses: taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7
       with:
-        tool: sccache@0.16.0,cargo-nextest@0.9.143
+        tool: sccache@0.17.0,cargo-nextest@0.9.143
     - name: Record compiler and dependency identity
       run: |
         rustc -Vv | tee "$RUNNER_TEMP/validation/rustc.txt"
