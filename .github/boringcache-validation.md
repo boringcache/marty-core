@@ -76,3 +76,8 @@ These runs are excluded from the timing table above. Library attribution include
 | 4 | workspace / commit | BoringCache | 347.191 | [job 102481116741](https://github.com/boringcache/marty-core/actions/runs/34356121331/job/102481116741) |
 | 5 | workspace / commit | GitHub | 311.110 | [job 102484163885](https://github.com/boringcache/marty-core/actions/runs/34357016445/job/102484163885) |
 | 5 | workspace / commit | BoringCache | 252.421 | [job 102484164352](https://github.com/boringcache/marty-core/actions/runs/34357016445/job/102484164352) |
+
+
+## Full integration follow-up
+
+The [Cargo/Docker integration report](boringcache-full-validation.md) records the subsequent first-class Cargo and relevant Docker validation. The compiler/archive results above remain a separate cohort; use the preserved `compiler-cache-validation` branch to reproduce that configuration.
