@@ -1,0 +1,289 @@
+[
+  {
+    "label": "marty_isolated_github",
+    "run_id": 34357852180,
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34357852180/job/102486978595",
+    "conclusion": "success",
+    "workspace_library_lookups": {
+      "marty_status": {
+        "miss": 1
+      },
+      "marty_python_adapters": {
+        "miss": 1
+      },
+      "marty_crypto": {
+        "miss": 1
+      },
+      "marty_crypto_test_support": {
+        "miss": 1
+      },
+      "marty_oid4vci": {
+        "miss": 1
+      },
+      "marty_test_wallet": {
+        "miss": 1
+      },
+      "marty_didcomm": {
+        "miss": 1
+      },
+      "marty_secure_storage": {
+        "miss": 1
+      },
+      "marty_oid4vci_wasm_serial_probe": {
+        "miss": 1
+      }
+    },
+    "read_only_write_denials": 0,
+    "write_error_http_statuses": {
+      "429": 1159
+    },
+    "other_write_errors": [
+      "[2026-09-09T13:34:46Z DEBUG sccache::server] Error executing cache write: RateLimited (temporary) at write, context: { uri: https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/CreateCacheEntry, response: Parts { status: 429, version: HTTP/1.1, headers: {\"content-length\": \"57\", \"content-type\": \"application/json\", \"retry-after\": \"14\", \"date\": \"Wed, 09 Sep 2026 13:34:46 GMT\", \"x-github-backend\": \"Kubernetes\", \"x-github-request-id\": \"4D82:7B147:34EB9B8:3AC6C0C:6AA16076\", \"x-github-edge-region\": \"iad\", \"server\": \"github.com\"} }, service: ghac, path: 7/e/2/7e201fcab38c997e064eb5c5f7f5438b194069413e0b23c8c1da243cbc07614c } => {\"code\":\"resource_exhausted\",\"msg\":\"rate limit exceeded\"}",
+      "[2026-09-09T13:34:46Z DEBUG sccache::server] Error executing cache write: RateLimited (temporary) at write, context: { uri: https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/CreateCacheEntry, response: Parts { status: 429, version: HTTP/1.1, headers: {\"content-length\": \"57\", \"content-type\": \"application/json\", \"retry-after\": \"14\", \"date\": \"Wed, 09 Sep 2026 13:34:46 GMT\", \"x-github-backend\": \"Kubernetes\", \"x-github-request-id\": \"4D82:7B147:34EBA71:3AC6CDA:6AA16076\", \"x-github-edge-region\": \"iad\", \"server\": \"github.com\"} }, service: ghac, path: 2/b/c/2bc0d226b78eb9e9d9e968e7236725315b4839dcf50b27bd68e69f65ad718ccb } => {\"code\":\"resource_exhausted\",\"msg\":\"rate limit exceeded\"}",
+      "[2026-09-09T13:34:46Z DEBUG sccache::server] Error executing cache write: RateLimited (temporary) at write, context: { uri: https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/CreateCacheEntry, response: Parts { status: 429, version: HTTP/1.1, headers: {\"content-length\": \"57\", \"content-type\": \"application/json\", \"retry-after\": \"14\", \"date\": \"Wed, 09 Sep 2026 13:34:46 GMT\", \"x-github-backend\": \"Kubernetes\", \"x-github-request-id\": \"4D82:7B147:34EBB41:3AC6DC3:6AA16076\", \"x-github-edge-region\": \"iad\", \"server\": \"github.com\"} }, service: ghac, path: 6/2/b/62b4fc6aed842aa96fbcca4dcb12e53c5433a39095d2b4ec82ee860c03ca9487 } => {\"code\":\"resource_exhausted\",\"msg\":\"rate limit exceeded\"}",
+      "[2026-09-09T13:34:46Z DEBUG sccache::server] Error executing cache write: RateLimited (temporary) at write, context: { uri: https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/CreateCacheEntry, response: Parts { status: 429, version: HTTP/1.1, headers: {\"content-length\": \"57\", \"content-type\": \"application/json\", \"retry-after\": \"14\", \"date\": \"Wed, 09 Sep 2026 13:34:46 GMT\", \"x-github-backend\": \"Kubernetes\", \"x-github-request-id\": \"4D82:7B147:34EBC6A:3AC6F09:6AA16076\", \"x-github-edge-region\": \"iad\", \"server\": \"github.com\"} }, service: ghac, path: 7/8/6/7866eb098482a0ee48f1104f4daef46b0168ef47387d2e03d7d52049cc429790 } => {\"code\":\"resource_exhausted\",\"msg\":\"rate limit exceeded\"}",
+      "[2026-09-09T13:34:46Z DEBUG sccache::server] Error executing cache write: RateLimited (temporary) at write, context: { uri: https://results-receiver.actions.githubusercontent.com/twirp/github.actions.results.api.v1.CacheService/CreateCacheEntry, response: Parts { status: 429, version: HTTP/1.1, headers: {\"content-length\": \"57\", \"content-type\": \"application/json\", \"retry-after\": \"14\", \"date\": \"Wed, 09 Sep 2026 13:34:46 GMT\", \"x-github-backend\": \"Kubernetes\", \"x-github-request-id\": \"4D82:7B147:34EBCD1:3AC6F6C:6AA16076\", \"x-github-edge-region\": \"iad\", \"server\": \"github.com\"} }, service: ghac, path: 7/8/3/7836b3fe3f50e0e9b9cceb76ce5ddc1f642ca4bb9ba5e288af060d61595c00a8 } => {\"code\":\"resource_exhausted\",\"msg\":\"rate limit exceeded\"}"
+    ],
+    "build": {
+      "command": [
+        "cargo",
+        "nextest",
+        "run",
+        "--locked",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 391.58,
+      "exit_code": 0
+    },
+    "native_stats": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 3
+          },
+          "adv_counts": {
+            "c [gcc]": 3,
+            "assembler [gcc]": 69
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1378,
+            "Rust": 599,
+            "Assembler": 182
+          },
+          "adv_counts": {
+            "rust": 599,
+            "assemblerToPreprocess [gcc]": 142,
+            "assembler [gcc]": 40,
+            "c [gcc]": 1378
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1159,
+        "cache_writes": 1000,
+        "cache_write_duration": {
+          "secs": 150,
+          "nanos": 866616413
+        },
+        "cache_read_hit_duration": {
+          "secs": 2,
+          "nanos": 865425997
+        },
+        "compilations": 2159,
+        "compiler_write_duration": {
+          "secs": 501,
+          "nanos": 74224201
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "crate-type": 171,
+          "-": 10,
+          "missing input": 6,
+          "-E": 2,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 91e4118474ba16d9eecfc5dcad9f32b1d173fc53eeb56775564da649811aec06, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "build_metadata": [],
+    "other_write_error_count": 1159,
+    "other_write_errors_truncated": true
+  },
+  {
+    "label": "marty_isolated_github",
+    "run_id": 34357852180,
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34357852180/job/102489569933",
+    "conclusion": "success",
+    "workspace_library_lookups": {
+      "marty_status": {
+        "miss": 1
+      },
+      "marty_python_adapters": {
+        "miss": 1
+      },
+      "marty_crypto": {
+        "hit": 1
+      },
+      "marty_crypto_test_support": {
+        "hit": 1
+      },
+      "marty_oid4vci": {
+        "miss": 1
+      },
+      "marty_test_wallet": {
+        "miss": 1
+      },
+      "marty_didcomm": {
+        "hit": 1
+      },
+      "marty_secure_storage": {
+        "miss": 1
+      },
+      "marty_oid4vci_wasm_serial_probe": {
+        "miss": 1
+      }
+    },
+    "read_only_write_denials": 1178,
+    "write_error_http_statuses": {},
+    "other_write_errors": [],
+    "build": {
+      "command": [
+        "cargo",
+        "nextest",
+        "run",
+        "--locked",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 376.205,
+      "exit_code": 0
+    },
+    "native_stats": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 595,
+            "Assembler": 94,
+            "Rust": 364
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 24,
+            "assembler [gcc]": 70,
+            "c [gcc]": 595,
+            "rust": 364
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 157,
+            "C/C++": 786,
+            "Rust": 235
+          },
+          "adv_counts": {
+            "assembler [gcc]": 39,
+            "assemblerToPreprocess [gcc]": 118,
+            "c [gcc]": 786,
+            "rust": 235
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1178,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 98,
+          "nanos": 991556368
+        },
+        "compilations": 1178,
+        "compiler_write_duration": {
+          "secs": 308,
+          "nanos": 583249696
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "crate-type": 171,
+          "-o": 3,
+          "-E": 2,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 91e4118474ba16d9eecfc5dcad9f32b1d173fc53eeb56775564da649811aec06, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "build_metadata": [],
+    "other_write_error_count": 0,
+    "other_write_errors_truncated": false
+  }
+]

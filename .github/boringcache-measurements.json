@@ -1,0 +1,6280 @@
+[
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "main",
+    "run_id": 34351971662,
+    "job_id": 102467198695,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34351971662/job/102467198695",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:36:11Z",
+    "completed_at": "2026-09-09T12:44:28Z",
+    "job_seconds": 497.0,
+    "build_seconds": 455.345,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      358.0,
+      1.36
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 16.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 461.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34351971662/artifacts/GitHub-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.296,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {},
+          "adv_counts": {}
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 241,
+            "Rust": 646,
+            "C/C++": 1379
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "assembler [gcc]": 109,
+            "c [gcc]": 1379,
+            "rust": 646
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2266,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "compilations": 2266,
+        "compiler_write_duration": {
+          "secs": 748,
+          "nanos": 587893056
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "-o": 3,
+          "-": 10,
+          "crate-type": 192,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 2266,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  89.299s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "main",
+    "run_id": 34351971662,
+    "job_id": 102467199088,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34351971662/job/102467199088",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:36:11Z",
+    "completed_at": "2026-09-09T12:42:58Z",
+    "job_seconds": 407.0,
+    "build_seconds": 368.499,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      281.0,
+      3.73
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 7.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 377.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34351971662/artifacts/BoringCache-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 8.11,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 8
+          },
+          "adv_counts": {
+            "assembler [gcc]": 69,
+            "c [gcc]": 8
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 646,
+            "Assembler": 172,
+            "C/C++": 1371
+          },
+          "adv_counts": {
+            "assembler [gcc]": 40,
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 646,
+            "c [gcc]": 1371
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2189,
+        "cache_write_duration": {
+          "secs": 7,
+          "nanos": 611145950
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 74455520
+        },
+        "compilations": 2189,
+        "compiler_write_duration": {
+          "secs": 614,
+          "nanos": 983060889
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "-": 10,
+          "crate-type": 192,
+          "-E": 2,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 77,
+            "misses": 2194,
+            "writes": 2189,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 0,
+              "nanos": 74133229
+            },
+            "write_duration": {
+              "secs": 4,
+              "nanos": 982542812
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  79.283s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34351971662/artifacts/BoringCache-workspace-cold/tmp/boringcache-one-evidence-7bfe176640b71a303f66c5216f73c6ae965e1e98d228963ef03dcadac2f156a3.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "main",
+    "run_id": 34351971662,
+    "job_id": 102469905519,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34351971662/job/102469905519",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:44:32Z",
+    "completed_at": "2026-09-09T12:49:33Z",
+    "job_seconds": 301.0,
+    "build_seconds": 232.559,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      142.0,
+      1.26
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 13.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 28.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 238.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34351971662/artifacts/BoringCache-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.508,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1378,
+            "Assembler": 241,
+            "Rust": 645
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 645,
+            "c [gcc]": 1378,
+            "assembler [gcc]": 109
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1,
+            "Rust": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 967919435
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 417748001
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "-E": 2,
+          "-": 10,
+          "crate-type": 192,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 645,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.84520123839009,
+    "cache_write_errors": 2,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  82.752s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34351971662/artifacts/BoringCache-workspace-warm/tmp/boringcache-one-evidence-fa7f0e5ab7c213514ed313d2ec5ecad13c7b98749c50ebf4c5510594e82675e7.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "main",
+    "run_id": 34351971662,
+    "job_id": 102469905704,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34351971662/job/102469905704",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:44:31Z",
+    "completed_at": "2026-09-09T12:52:24Z",
+    "job_seconds": 473.0,
+    "build_seconds": 439.984,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      351.0,
+      1.34
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 7.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 445.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34351971662/artifacts/GitHub-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.349,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {},
+          "adv_counts": {}
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 646,
+            "Assembler": 241,
+            "C/C++": 1379
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 646,
+            "assembler [gcc]": 109,
+            "c [gcc]": 1379
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2266,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "compilations": 2266,
+        "compiler_write_duration": {
+          "secs": 763,
+          "nanos": 539516114
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "missing input": 6,
+          "-": 10,
+          "-E": 2,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 2266,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  80.983s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352051746,
+    "job_id": 102467474058,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352051746/job/102467474058",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:02Z",
+    "completed_at": "2026-09-09T12:45:50Z",
+    "job_seconds": 528.0,
+    "build_seconds": 493.28,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      388.0,
+      1.58
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 12.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 499.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352051746/artifacts/GitHub-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.781,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 241,
+            "Rust": 646,
+            "C/C++": 1378
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "rust": 646,
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1378
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1880,
+        "cache_writes": 385,
+        "cache_write_duration": {
+          "secs": 59,
+          "nanos": 356665723
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 59492018
+        },
+        "compilations": 2265,
+        "compiler_write_duration": {
+          "secs": 777,
+          "nanos": 246335614
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-o": 3,
+          "-E": 2,
+          "crate-type": 192,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 24233520511b1c6697adb1b682c23f226ce2910f8a194a90b880aa7966037ebf, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 1880,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  98.008s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352051746,
+    "job_id": 102467474315,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352051746/job/102467474315",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:03Z",
+    "completed_at": "2026-09-09T12:45:57Z",
+    "job_seconds": 534.0,
+    "build_seconds": 486.641,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      373.0,
+      1.33
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 14.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 5.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 492.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352051746/artifacts/BoringCache-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.553,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 8
+          },
+          "adv_counts": {
+            "assembler [gcc]": 69,
+            "c [gcc]": 8
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1371,
+            "Rust": 646,
+            "Assembler": 172
+          },
+          "adv_counts": {
+            "assembler [gcc]": 40,
+            "c [gcc]": 1371,
+            "rust": 646,
+            "assemblerToPreprocess [gcc]": 132
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2189,
+        "cache_write_duration": {
+          "secs": 9,
+          "nanos": 643977243
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 76199758
+        },
+        "compilations": 2189,
+        "compiler_write_duration": {
+          "secs": 834,
+          "nanos": 166834189
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-o": 3,
+          "-E": 2,
+          "crate-type": 192,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 77,
+            "misses": 2194,
+            "writes": 2189,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 0,
+              "nanos": 75861656
+            },
+            "write_duration": {
+              "secs": 6,
+              "nanos": 358183190
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 105.919s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352051746/artifacts/BoringCache-workspace-cold/tmp/boringcache-one-evidence-f27ab5976ca827104f81976d30514609e8bbc36994e122ebcd3c45fdc064c698.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352051746,
+    "job_id": 102470397657,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352051746/job/102470397657",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:46:00Z",
+    "completed_at": "2026-09-09T12:53:59Z",
+    "job_seconds": 479.0,
+    "build_seconds": 442.164,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      338.0,
+      1.34
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 448.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352051746/artifacts/GitHub-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.133,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 4,
+            "Rust": 192,
+            "C/C++": 121
+          },
+          "adv_counts": {
+            "c [gcc]": 121,
+            "rust": 192,
+            "assemblerToPreprocess [gcc]": 4
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 454,
+            "C/C++": 1258,
+            "Assembler": 237
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 128,
+            "c [gcc]": 1258,
+            "assembler [gcc]": 109,
+            "rust": 454
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1949,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 75,
+          "nanos": 686862731
+        },
+        "compilations": 1949,
+        "compiler_write_duration": {
+          "secs": 559,
+          "nanos": 884335773
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "-": 10,
+          "missing input": 6,
+          "-o": 3,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 24233520511b1c6697adb1b682c23f226ce2910f8a194a90b880aa7966037ebf, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 192,
+    "rust_misses": 454,
+    "rust_hit_percent": 29.721362229102166,
+    "cache_write_errors": 1949,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  95.172s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352051746,
+    "job_id": 102470397669,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352051746/job/102470397669",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:45:59Z",
+    "completed_at": "2026-09-09T12:50:48Z",
+    "job_seconds": 289.0,
+    "build_seconds": 246.237,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      137.0,
+      1.18
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 252.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352051746/artifacts/BoringCache-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.307,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Rust": 645,
+            "Assembler": 241,
+            "C/C++": 1378
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "rust": 645,
+            "c [gcc]": 1378,
+            "assemblerToPreprocess [gcc]": 132
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 1,
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "rust": 1,
+            "c [gcc]": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 699170395
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 400136503
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "-E": 2,
+          "-o": 3,
+          "crate-type": 192,
+          "-": 10
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 645,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.84520123839009,
+    "cache_write_errors": 2,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 102.788s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352051746/artifacts/BoringCache-workspace-warm/tmp/boringcache-one-evidence-44e22b237a366df7c7c17bc18a26f53dfeef66fe18fb715f2a50ea3326057c9e.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352053564,
+    "job_id": 102467480065,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352053564/job/102467480065",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:03Z",
+    "completed_at": "2026-09-09T12:45:32Z",
+    "job_seconds": 509.0,
+    "build_seconds": 472.435,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      361.0,
+      1.82
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 479.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352053564/artifacts/BoringCache-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.944,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 8
+          },
+          "adv_counts": {
+            "c [gcc]": 8,
+            "assembler [gcc]": 69
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1371,
+            "Rust": 646,
+            "Assembler": 172
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "assembler [gcc]": 40,
+            "rust": 646,
+            "c [gcc]": 1371
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2189,
+        "cache_write_duration": {
+          "secs": 9,
+          "nanos": 378956178
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 88180406
+        },
+        "compilations": 2189,
+        "compiler_write_duration": {
+          "secs": 803,
+          "nanos": 309249992
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "crate-type": 192,
+          "missing input": 6,
+          "-E": 2,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 77,
+            "misses": 2194,
+            "writes": 2189,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 0,
+              "nanos": 87796367
+            },
+            "write_duration": {
+              "secs": 6,
+              "nanos": 182935597
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 104.556s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352053564/artifacts/BoringCache-workspace-cold/tmp/boringcache-one-evidence-59749ef4880dff925fe274b1a239640a82063685ce7834769ab090200b20f6fd.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352053564,
+    "job_id": 102467480374,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352053564/job/102467480374",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:03Z",
+    "completed_at": "2026-09-09T12:44:26Z",
+    "job_seconds": 443.0,
+    "build_seconds": 393.841,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      322.0,
+      4.38
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 4.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 16.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 404.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352053564/artifacts/GitHub-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 9.922,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 46,
+            "C/C++": 5
+          },
+          "adv_counts": {
+            "assembler [gcc]": 46,
+            "c [gcc]": 5
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1374,
+            "Assembler": 195,
+            "Rust": 646
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1374,
+            "rust": 646,
+            "assembler [gcc]": 63
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1782,
+        "cache_writes": 433,
+        "cache_write_duration": {
+          "secs": 119,
+          "nanos": 121915132
+        },
+        "cache_read_hit_duration": {
+          "secs": 5,
+          "nanos": 387998432
+        },
+        "compilations": 2215,
+        "compiler_write_duration": {
+          "secs": 542,
+          "nanos": 271773149
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "-o": 3,
+          "-": 10,
+          "missing input": 6,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 6f8eb8cd8943256ec45302d59d50a9107ed8ae80c030006ff102ffd375611e00, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 1782,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  62.099s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352053564,
+    "job_id": 102470259288,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352053564/job/102470259288",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:45:34Z",
+    "completed_at": "2026-09-09T12:49:25Z",
+    "job_seconds": 231.0,
+    "build_seconds": 178.894,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      108.0,
+      1.25
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 15.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 12.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 183.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352053564/artifacts/BoringCache-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 4.446,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 241,
+            "C/C++": 1378,
+            "Rust": 645
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 645,
+            "c [gcc]": 1378
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 1,
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 430220961
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 296171642
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "crate-type": 192,
+          "missing input": 6,
+          "-": 10,
+          "-E": 2
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 645,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.84520123839009,
+    "cache_write_errors": 2,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  64.167s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352053564/artifacts/BoringCache-workspace-warm/tmp/boringcache-one-evidence-c318d73c9599db312fbc96a318f3132d3eb9ac91a897061c20d44e61c90d656d.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352053564,
+    "job_id": 102470259936,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352053564/job/102470259936",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:45:34Z",
+    "completed_at": "2026-09-09T12:53:02Z",
+    "job_seconds": 448.0,
+    "build_seconds": 412.09,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      317.0,
+      1.37
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 13.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 418.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352053564/artifacts/GitHub-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.358,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 155,
+            "Assembler": 79,
+            "Rust": 169
+          },
+          "adv_counts": {
+            "rust": 169,
+            "assemblerToPreprocess [gcc]": 13,
+            "c [gcc]": 155,
+            "assembler [gcc]": 66
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 162,
+            "C/C++": 1224,
+            "Rust": 477
+          },
+          "adv_counts": {
+            "c [gcc]": 1224,
+            "assemblerToPreprocess [gcc]": 119,
+            "rust": 477,
+            "assembler [gcc]": 43
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1863,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 22,
+          "nanos": 330637294
+        },
+        "compilations": 1863,
+        "compiler_write_duration": {
+          "secs": 623,
+          "nanos": 666855458
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-E": 2,
+          "-o": 3,
+          "missing input": 6,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 6f8eb8cd8943256ec45302d59d50a9107ed8ae80c030006ff102ffd375611e00, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 169,
+    "rust_misses": 477,
+    "rust_hit_percent": 26.1609907120743,
+    "cache_write_errors": 1863,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  87.840s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352055461,
+    "job_id": 102467487935,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352055461/job/102467487935",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:04Z",
+    "completed_at": "2026-09-09T12:43:54Z",
+    "job_seconds": 410.0,
+    "build_seconds": 360.33,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      284.0,
+      1.54
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 20.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 365.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352055461/artifacts/BoringCache-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 4.792,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 8,
+            "Assembler": 69
+          },
+          "adv_counts": {
+            "c [gcc]": 8,
+            "assembler [gcc]": 69
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 646,
+            "Assembler": 172,
+            "C/C++": 1371
+          },
+          "adv_counts": {
+            "rust": 646,
+            "c [gcc]": 1371,
+            "assemblerToPreprocess [gcc]": 132,
+            "assembler [gcc]": 40
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2189,
+        "cache_write_duration": {
+          "secs": 7,
+          "nanos": 22639537
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 49343542
+        },
+        "compilations": 2189,
+        "compiler_write_duration": {
+          "secs": 632,
+          "nanos": 166916168
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "missing input": 6,
+          "-E": 2,
+          "crate-type": 192,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 77,
+            "misses": 2194,
+            "writes": 2189,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 0,
+              "nanos": 49031177
+            },
+            "write_duration": {
+              "secs": 4,
+              "nanos": 679502388
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  68.354s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352055461/artifacts/BoringCache-workspace-cold/tmp/boringcache-one-evidence-c87521e216c2be28acd3bbb1c81c48bb766088bda6ec465ccf79bc78f0e533ea.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352055461,
+    "job_id": 102467488220,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352055461/job/102467488220",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:05Z",
+    "completed_at": "2026-09-09T12:46:22Z",
+    "job_seconds": 557.0,
+    "build_seconds": 510.324,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      393.0,
+      1.7
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 18.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 517.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352055461/artifacts/GitHub-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 6.191,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 12
+          },
+          "adv_counts": {
+            "assembler [gcc]": 12
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 229,
+            "Rust": 646,
+            "C/C++": 1379
+          },
+          "adv_counts": {
+            "assembler [gcc]": 97,
+            "rust": 646,
+            "c [gcc]": 1379,
+            "assemblerToPreprocess [gcc]": 132
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1954,
+        "cache_writes": 300,
+        "cache_write_duration": {
+          "secs": 91,
+          "nanos": 556380471
+        },
+        "cache_read_hit_duration": {
+          "secs": 1,
+          "nanos": 511818371
+        },
+        "compilations": 2254,
+        "compiler_write_duration": {
+          "secs": 699,
+          "nanos": 126195870
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "-o": 3,
+          "crate-type": 192,
+          "-": 10,
+          "-E": 2
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: f9e0b1ded6b6362f2edda732b19402161a1a2c3a543769d0a027653f3d47175e, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 1954,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 108.139s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352055461,
+    "job_id": 102470530675,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352055461/job/102470530675",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:46:26Z",
+    "completed_at": "2026-09-09T12:51:37Z",
+    "job_seconds": 311.0,
+    "build_seconds": 238.53,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      137.0,
+      1.12
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 32.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 244.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352055461/artifacts/BoringCache-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.13,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 241,
+            "Rust": 645,
+            "C/C++": 1378
+          },
+          "adv_counts": {
+            "rust": 645,
+            "assembler [gcc]": 109,
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1378
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 1,
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 831569175
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 371589719
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "missing input": 6,
+          "-o": 3,
+          "-E": 2,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 645,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.84520123839009,
+    "cache_write_errors": 2,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  92.957s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352055461/artifacts/BoringCache-workspace-warm/tmp/boringcache-one-evidence-b46c94d4a4548b91c54a321cd17df8d616794e95be491fc6ec6a28d08fd6d52d.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352055461,
+    "job_id": 102470530692,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352055461/job/102470530692",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:46:24Z",
+    "completed_at": "2026-09-09T12:53:59Z",
+    "job_seconds": 455.0,
+    "build_seconds": 410.224,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      317.0,
+      1.39
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 20.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 416.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352055461/artifacts/GitHub-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.446,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Rust": 125,
+            "C/C++": 119,
+            "Assembler": 66
+          },
+          "adv_counts": {
+            "assembler [gcc]": 66,
+            "c [gcc]": 119,
+            "rust": 125
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 521,
+            "C/C++": 1260,
+            "Assembler": 175
+          },
+          "adv_counts": {
+            "c [gcc]": 1260,
+            "assembler [gcc]": 43,
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 521
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1956,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 18,
+          "nanos": 168195142
+        },
+        "compilations": 1956,
+        "compiler_write_duration": {
+          "secs": 608,
+          "nanos": 604329591
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "-o": 3,
+          "-": 10,
+          "-E": 2,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: f9e0b1ded6b6362f2edda732b19402161a1a2c3a543769d0a027653f3d47175e, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 125,
+    "rust_misses": 521,
+    "rust_hit_percent": 19.34984520123839,
+    "cache_write_errors": 1956,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  86.529s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352057302,
+    "job_id": 102467494441,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352057302/job/102467494441",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:06Z",
+    "completed_at": "2026-09-09T12:45:50Z",
+    "job_seconds": 524.0,
+    "build_seconds": 478.396,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      370.0,
+      1.93
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 5.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 485.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352057302/artifacts/BoringCache-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 6.222,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 8
+          },
+          "adv_counts": {
+            "c [gcc]": 8,
+            "assembler [gcc]": 69
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 646,
+            "Assembler": 172,
+            "C/C++": 1371
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1371,
+            "assembler [gcc]": 40,
+            "rust": 646
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2189,
+        "cache_write_duration": {
+          "secs": 9,
+          "nanos": 390592370
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 83722689
+        },
+        "compilations": 2189,
+        "compiler_write_duration": {
+          "secs": 822,
+          "nanos": 57418226
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "crate-type": 192,
+          "-": 10,
+          "-E": 2,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 77,
+            "misses": 2194,
+            "writes": 2189,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 0,
+              "nanos": 83337224
+            },
+            "write_duration": {
+              "secs": 6,
+              "nanos": 246910784
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 101.330s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352057302/artifacts/BoringCache-workspace-cold/tmp/boringcache-one-evidence-0192c9903ed7a8b52a50e3c5d354bab642fb259be3f73e59f151a275b17a22f0.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "cold",
+    "cohort": "repeat",
+    "run_id": 34352057302,
+    "job_id": 102467494680,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352057302/job/102467494680",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:37:06Z",
+    "completed_at": "2026-09-09T12:45:52Z",
+    "job_seconds": 526.0,
+    "build_seconds": 486.511,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      391.0,
+      1.79
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 492.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352057302/artifacts/GitHub-workspace-cold",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.502,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 240,
+            "C/C++": 1379,
+            "Rust": 646
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "rust": 646,
+            "c [gcc]": 1379,
+            "assembler [gcc]": 108
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 1984,
+        "cache_writes": 281,
+        "cache_write_duration": {
+          "secs": 115,
+          "nanos": 657520579
+        },
+        "cache_read_hit_duration": {
+          "secs": 0,
+          "nanos": 292260293
+        },
+        "compilations": 2265,
+        "compiler_write_duration": {
+          "secs": 642,
+          "nanos": 783940548
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "missing input": 6,
+          "-o": 3,
+          "crate-type": 192,
+          "-": 10
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 2dddc8f9bb2e1309692e8765cb8e4aa2611cc9fa11678e3350713afc55441749, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 1984,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  87.071s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352057302,
+    "job_id": 102470372374,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352057302/job/102470372374",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:46:30Z",
+    "completed_at": "2026-09-09T12:51:18Z",
+    "job_seconds": 288.0,
+    "build_seconds": 244.473,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      146.0,
+      1.31
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 250.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352057302/artifacts/BoringCache-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.508,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1378,
+            "Rust": 645,
+            "Assembler": 241
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1378,
+            "rust": 645
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 1,
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "rust": 1,
+            "c [gcc]": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 811169136
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 414914964
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "missing input": 6,
+          "-": 10,
+          "-E": 2,
+          "crate-type": 192
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 645,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.84520123839009,
+    "cache_write_errors": 2,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  91.665s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34352057302/artifacts/BoringCache-workspace-warm/tmp/boringcache-one-evidence-070120e3251d3e59dde1dcb8d4cb3212e2ee5356255867fc2b82e521714f2d23.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "warm",
+    "cohort": "repeat",
+    "run_id": 34352057302,
+    "job_id": 102470372407,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34352057302/job/102470372407",
+    "source": "0cfef3337e9a47288e90e325b495d050c07f70e2",
+    "source_index": 0,
+    "workflow_commit": "77f9885e0f46ffe4f27dbbddcc0d01a070bbc682",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:45:55Z",
+    "completed_at": "2026-09-09T12:53:28Z",
+    "job_seconds": 453.0,
+    "build_seconds": 421.38,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      325.0,
+      1.64
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 427.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34352057302/artifacts/GitHub-workspace-warm",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.611,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2490,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 213,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 49,
+            "C/C++": 68,
+            "Rust": 140
+          },
+          "adv_counts": {
+            "c [gcc]": 68,
+            "rust": 140,
+            "assembler [gcc]": 49
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1311,
+            "Rust": 506,
+            "Assembler": 192
+          },
+          "adv_counts": {
+            "assembler [gcc]": 60,
+            "c [gcc]": 1311,
+            "rust": 506,
+            "assemblerToPreprocess [gcc]": 132
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 2009,
+        "cache_writes": 0,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 0
+        },
+        "cache_read_hit_duration": {
+          "secs": 18,
+          "nanos": 467836712
+        },
+        "compilations": 2009,
+        "compiler_write_duration": {
+          "secs": 651,
+          "nanos": 811967202
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "crate-type": 192,
+          "-": 10,
+          "-o": 3,
+          "-E": 2
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 2dddc8f9bb2e1309692e8765cb8e4aa2611cc9fa11678e3350713afc55441749, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 140,
+    "rust_misses": 506,
+    "rust_hit_percent": 21.671826625387,
+    "cache_write_errors": 2009,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  89.737s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34353642438,
+    "job_id": 102472745576,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34353642438/job/102472745576",
+    "source": "39f605a48be7572d31b4afcb7de3bcac48895041",
+    "source_index": 1,
+    "workflow_commit": "16a0b3741dfd3bf099b3a1ae99214169e793822c",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:53:08Z",
+    "completed_at": "2026-09-09T13:04:08Z",
+    "job_seconds": 660.0,
+    "build_seconds": 621.537,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      519.0,
+      2.14
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 12.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 628.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34353642438/artifacts/GitHub-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 6.408,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2481,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 204,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 69,
+            "C/C++": 6
+          },
+          "adv_counts": {
+            "c [gcc]": 6,
+            "assembler [gcc]": 69
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 646,
+            "Assembler": 172,
+            "C/C++": 1373
+          },
+          "adv_counts": {
+            "rust": 646,
+            "c [gcc]": 1373,
+            "assembler [gcc]": 40,
+            "assemblerToPreprocess [gcc]": 132
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 571,
+        "cache_writes": 1620,
+        "cache_write_duration": {
+          "secs": 691,
+          "nanos": 211615729
+        },
+        "cache_read_hit_duration": {
+          "secs": 12,
+          "nanos": 968277963
+        },
+        "compilations": 2191,
+        "compiler_write_duration": {
+          "secs": 612,
+          "nanos": 247390137
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "missing input": 6,
+          "-E": 2,
+          "-": 10,
+          "crate-type": 183
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 0,
+    "rust_misses": 646,
+    "rust_hit_percent": 0.0,
+    "cache_write_errors": 571,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  94.536s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34353642438,
+    "job_id": 102472745757,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34353642438/job/102472745757",
+    "source": "39f605a48be7572d31b4afcb7de3bcac48895041",
+    "source_index": 1,
+    "workflow_commit": "16a0b3741dfd3bf099b3a1ae99214169e793822c",
+    "conclusion": "success",
+    "started_at": "2026-09-09T12:53:07Z",
+    "completed_at": "2026-09-09T12:58:18Z",
+    "job_seconds": 311.0,
+    "build_seconds": 248.671,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      142.0,
+      0.69
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 12.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 22.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 254.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34353642438/artifacts/BoringCache-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.0,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2481,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 204,
+        "requests_executed": 2271,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 241,
+            "Rust": 643,
+            "C/C++": 1378
+          },
+          "adv_counts": {
+            "rust": 643,
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1378,
+            "assembler [gcc]": 109
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1,
+            "Rust": 3
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 3
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 4,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 41443500
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 896713497
+        },
+        "compilations": 4,
+        "compiler_write_duration": {
+          "secs": 8,
+          "nanos": 739643739
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "crate-type": 183,
+          "-E": 2,
+          "-": 10,
+          "missing input": 6,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 2262,
+            "misses": 9,
+            "writes": 4,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 3,
+              "nanos": 880153053
+            },
+            "write_duration": {
+              "secs": 0,
+              "nanos": 35706032
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 643,
+    "rust_misses": 3,
+    "rust_hit_percent": 99.53560371517028,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  98.337s] 1281 tests run: 1281 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34353642438/artifacts/BoringCache-workspace-commit/tmp/boringcache-one-evidence-6abbe22934ff5e7bd530295c8a5eda38e5cb2cb7da674773441ab08fb0e5c178.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34354798211,
+    "job_id": 102476635515,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34354798211/job/102476635515",
+    "source": "f4c390f70ab016df6cb21234389021be9debf303",
+    "source_index": 2,
+    "workflow_commit": "e47dfa244d42ed22163f5a9d7e967d40280e1ee3",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:04:31Z",
+    "completed_at": "2026-09-09T13:09:26Z",
+    "job_seconds": 295.0,
+    "build_seconds": 253.221,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      157.0,
+      0.62
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 259.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34354798211/artifacts/BoringCache-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.006,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2480,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 201,
+        "requests_executed": 2273,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 241,
+            "Rust": 596,
+            "C/C++": 1378
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 132,
+            "assembler [gcc]": 109,
+            "rust": 596,
+            "c [gcc]": 1378
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1,
+            "Rust": 52
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 52
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 53,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 351918051
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 547249259
+        },
+        "compilations": 53,
+        "compiler_write_duration": {
+          "secs": 58,
+          "nanos": 400637835
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "missing input": 6,
+          "-E": 2,
+          "crate-type": 180,
+          "-": 10
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 2215,
+            "misses": 58,
+            "writes": 53,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 3,
+              "nanos": 530404653
+            },
+            "write_duration": {
+              "secs": 0,
+              "nanos": 259898227
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 596,
+    "rust_misses": 52,
+    "rust_hit_percent": 91.9753086419753,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  88.835s] 1354 tests run: 1354 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34354798211/artifacts/BoringCache-workspace-commit/tmp/boringcache-one-evidence-2cfddf971d9488b9e04c7be7f20495ee41694a6f2b50be7c2ddba898af832af0.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34354798211,
+    "job_id": 102476635784,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34354798211/job/102476635784",
+    "source": "f4c390f70ab016df6cb21234389021be9debf303",
+    "source_index": 2,
+    "workflow_commit": "e47dfa244d42ed22163f5a9d7e967d40280e1ee3",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:04:31Z",
+    "completed_at": "2026-09-09T13:10:54Z",
+    "job_seconds": 383.0,
+    "build_seconds": 345.999,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      234.0,
+      1.85
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 353.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34354798211/artifacts/GitHub-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 6.314,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2480,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 201,
+        "requests_executed": 2273,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 162,
+            "Rust": 548,
+            "C/C++": 954
+          },
+          "adv_counts": {
+            "assembler [gcc]": 70,
+            "rust": 548,
+            "c [gcc]": 954,
+            "assemblerToPreprocess [gcc]": 92
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 79,
+            "Rust": 100,
+            "C/C++": 425
+          },
+          "adv_counts": {
+            "c [gcc]": 425,
+            "assemblerToPreprocess [gcc]": 40,
+            "rust": 100,
+            "assembler [gcc]": 39
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 13,
+        "cache_writes": 591,
+        "cache_write_duration": {
+          "secs": 122,
+          "nanos": 615438726
+        },
+        "cache_read_hit_duration": {
+          "secs": 139,
+          "nanos": 946596499
+        },
+        "compilations": 604,
+        "compiler_write_duration": {
+          "secs": 145,
+          "nanos": 907955488
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-E": 2,
+          "missing input": 6,
+          "crate-type": 180,
+          "-o": 3
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 548,
+    "rust_misses": 100,
+    "rust_hit_percent": 84.5679012345679,
+    "cache_write_errors": 13,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 103.348s] 1354 tests run: 1354 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34355492202,
+    "job_id": 102478986876,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34355492202/job/102478986876",
+    "source": "b3c6b61563866528eb1a4f5469dd29af00500113",
+    "source_index": 3,
+    "workflow_commit": "ae0589e3f131b08132eb2c9294ef849ad9a44dc3",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:11:15Z",
+    "completed_at": "2026-09-09T13:16:59Z",
+    "job_seconds": 344.0,
+    "build_seconds": 310.089,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      187.0,
+      0.85
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 316.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34355492202/artifacts/GitHub-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.363,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2471,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 200,
+        "requests_executed": 2265,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 241,
+            "C/C++": 1368,
+            "Rust": 596
+          },
+          "adv_counts": {
+            "c [gcc]": 1368,
+            "rust": 596,
+            "assemblerToPreprocess [gcc]": 132,
+            "assembler [gcc]": 109
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 11,
+            "Rust": 44
+          },
+          "adv_counts": {
+            "c [gcc]": 11,
+            "rust": 44
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 55,
+        "cache_write_duration": {
+          "secs": 11,
+          "nanos": 571556239
+        },
+        "cache_read_hit_duration": {
+          "secs": 115,
+          "nanos": 734788109
+        },
+        "compilations": 55,
+        "compiler_write_duration": {
+          "secs": 76,
+          "nanos": 626678143
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "-o": 3,
+          "missing input": 6,
+          "-": 10,
+          "crate-type": 179
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 596,
+    "rust_misses": 44,
+    "rust_hit_percent": 93.125,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 115.638s] 1362 tests run: 1362 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34355492202,
+    "job_id": 102478987289,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34355492202/job/102478987289",
+    "source": "b3c6b61563866528eb1a4f5469dd29af00500113",
+    "source_index": 3,
+    "workflow_commit": "ae0589e3f131b08132eb2c9294ef849ad9a44dc3",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:11:16Z",
+    "completed_at": "2026-09-09T13:16:32Z",
+    "job_seconds": 316.0,
+    "build_seconds": 272.785,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      175.0,
+      0.85
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 8.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 278.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34355492202/artifacts/BoringCache-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.459,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2471,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 200,
+        "requests_executed": 2265,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1378,
+            "Assembler": 241,
+            "Rust": 597
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "assemblerToPreprocess [gcc]": 132,
+            "c [gcc]": 1378,
+            "rust": 597
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1,
+            "Rust": 43
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 43
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 44,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 427321502
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 833969463
+        },
+        "compilations": 44,
+        "compiler_write_duration": {
+          "secs": 105,
+          "nanos": 59574322
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-E": 2,
+          "crate-type": 179,
+          "-o": 3,
+          "missing input": 6,
+          "-": 10
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 2216,
+            "misses": 49,
+            "writes": 44,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 3,
+              "nanos": 816313209
+            },
+            "write_duration": {
+              "secs": 0,
+              "nanos": 349233748
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 597,
+    "rust_misses": 43,
+    "rust_hit_percent": 93.28125,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      "  90.360s] 1362 tests run: 1362 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34355492202/artifacts/BoringCache-workspace-commit/tmp/boringcache-one-evidence-47d59ada165eab26eaa2b3753bc15b1c8d9e5d0d9fd2345069dd31c28b6d4306.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34356121331,
+    "job_id": 102481116216,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34356121331/job/102481116216",
+    "source": "1ae5b71e53ebfd2bad29b2e7c23c3d048461245c",
+    "source_index": 4,
+    "workflow_commit": "051a9d8ced0df66379d44e103c760e78797a3a9c",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:17:17Z",
+    "completed_at": "2026-09-09T13:25:13Z",
+    "job_seconds": 476.0,
+    "build_seconds": 435.957,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      272.0,
+      1.1
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 13.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 442.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34356121331/artifacts/GitHub-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 5.779,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 130,
+            "C/C++": 1127,
+            "Rust": 458
+          },
+          "adv_counts": {
+            "c [gcc]": 1127,
+            "assemblerToPreprocess [gcc]": 21,
+            "rust": 458,
+            "assembler [gcc]": 109
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 141,
+            "Assembler": 121,
+            "C/C++": 254
+          },
+          "adv_counts": {
+            "assemblerToPreprocess [gcc]": 121,
+            "c [gcc]": 254,
+            "rust": 141
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 516,
+        "cache_write_duration": {
+          "secs": 140,
+          "nanos": 613987357
+        },
+        "cache_read_hit_duration": {
+          "secs": 177,
+          "nanos": 161320420
+        },
+        "compilations": 516,
+        "compiler_write_duration": {
+          "secs": 194,
+          "nanos": 583031309
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "missing input": 6,
+          "crate-type": 171,
+          "-": 10,
+          "-o": 3,
+          "-E": 2
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 458,
+    "rust_misses": 141,
+    "rust_hit_percent": 76.46076794657763,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 155.295s] 1400 tests run: 1400 passed (1 slow), 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34356121331,
+    "job_id": 102481116741,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34356121331/job/102481116741",
+    "source": "1ae5b71e53ebfd2bad29b2e7c23c3d048461245c",
+    "source_index": 4,
+    "workflow_commit": "051a9d8ced0df66379d44e103c760e78797a3a9c",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:17:17Z",
+    "completed_at": "2026-09-09T13:23:54Z",
+    "job_seconds": 397.0,
+    "build_seconds": 347.191,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      197.0,
+      1.34
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 11.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 353.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34356121331/artifacts/BoringCache-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 6.192,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1127,
+            "Rust": 458,
+            "Assembler": 130
+          },
+          "adv_counts": {
+            "c [gcc]": 1127,
+            "assembler [gcc]": 109,
+            "assemblerToPreprocess [gcc]": 21,
+            "rust": 458
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Assembler": 121,
+            "Rust": 141,
+            "C/C++": 254
+          },
+          "adv_counts": {
+            "rust": 141,
+            "c [gcc]": 254,
+            "assemblerToPreprocess [gcc]": 121
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 516,
+        "cache_write_duration": {
+          "secs": 2,
+          "nanos": 626100475
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 604480498
+        },
+        "compilations": 516,
+        "compiler_write_duration": {
+          "secs": 221,
+          "nanos": 152066429
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-E": 2,
+          "-o": 3,
+          "missing input": 6,
+          "crate-type": 171
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 1715,
+            "misses": 521,
+            "writes": 516,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 3,
+              "nanos": 589911206
+            },
+            "write_duration": {
+              "secs": 1,
+              "nanos": 820794384
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 458,
+    "rust_misses": 141,
+    "rust_hit_percent": 76.46076794657763,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 140.368s] 1400 tests run: 1400 passed (1 slow), 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34356121331/artifacts/BoringCache-workspace-commit/tmp/boringcache-one-evidence-e398127233a6f88584ceeb52839658ea95243ee85c93acaa6604b8215f547118.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  },
+  {
+    "repo": "marty-core",
+    "provider": "GitHub",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34357016445,
+    "job_id": 102484163885,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34357016445/job/102484163885",
+    "source": "14a6b356811c27d0df9115fe9cc6df6b2a21952b",
+    "source_index": 5,
+    "workflow_commit": "0078681f97f432a9589f8b530ca0188870d2de73",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:25:53Z",
+    "completed_at": "2026-09-09T13:31:48Z",
+    "job_seconds": 355.0,
+    "build_seconds": 311.11,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      198.0,
+      3.04
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 7.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 15.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 318.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34357016445/artifacts/GitHub-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 7.161,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "C/C++": 1380,
+            "Assembler": 251,
+            "Rust": 598
+          },
+          "adv_counts": {
+            "assembler [gcc]": 109,
+            "rust": 598,
+            "assemblerToPreprocess [gcc]": 142,
+            "c [gcc]": 1380
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "Rust": 1,
+            "C/C++": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2,
+        "cache_write_duration": {
+          "secs": 1,
+          "nanos": 851925825
+        },
+        "cache_read_hit_duration": {
+          "secs": 414,
+          "nanos": 931981842
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 539056448
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-o": 3,
+          "missing input": 6,
+          "-": 10,
+          "crate-type": 171,
+          "-E": 2
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": null
+      },
+      "cache_location": "ghac, name: 8f201f6126e1fef7606cb50c674d6f80abd48c3d7f4701c3c3d7bd60de3e7569, prefix: /sccache/",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 598,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.8330550918197,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 104.076s] 1400 tests run: 1400 passed, 4 skipped"
+    ],
+    "product_evidence_files": [],
+    "cli_versions": []
+  },
+  {
+    "repo": "marty-core",
+    "provider": "BoringCache",
+    "case": "workspace",
+    "phase": "commit",
+    "cohort": "rolling",
+    "run_id": 34357016445,
+    "job_id": 102484164352,
+    "job_url": "https://github.com/boringcache/marty-core/actions/runs/34357016445/job/102484164352",
+    "source": "14a6b356811c27d0df9115fe9cc6df6b2a21952b",
+    "source_index": 5,
+    "workflow_commit": "0078681f97f432a9589f8b530ca0188870d2de73",
+    "conclusion": "success",
+    "started_at": "2026-09-09T13:25:53Z",
+    "completed_at": "2026-09-09T13:30:52Z",
+    "job_seconds": 299.0,
+    "build_seconds": 252.421,
+    "build_exit_code": 0,
+    "build_command": [
+      "cargo",
+      "nextest",
+      "run",
+      "--locked",
+      "--workspace",
+      "--exclude",
+      "marty-zkp",
+      "--exclude",
+      "marty-bindings",
+      "--features",
+      "test-fixtures"
+    ],
+    "cargo_compile_seconds": [
+      123.0,
+      0.75
+    ],
+    "steps": {
+      "Set up job": {
+        "conclusion": "success",
+        "seconds": 3.0
+      },
+      "Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Record and verify the upstream source": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Run dtolnay/rust-toolchain@4cda84d5c5c54efe2404f9d843567869ab1699d4": {
+        "conclusion": "success",
+        "seconds": 9.0
+      },
+      "Run taiki-e/install-action@fcf5432d9f50d67e37ee6e29bdb7a224ff67b4a7": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Record compiler and dependency identity": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Install native build prerequisites": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Configure GitHub sccache storage": {
+        "conclusion": "skipped",
+        "seconds": 0.0
+      },
+      "Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 10.0
+      },
+      "Run the upstream workload": {
+        "conclusion": "success",
+        "seconds": 257.0
+      },
+      "Retain native compiler statistics": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Retain measurements and product evidence": {
+        "conclusion": "success",
+        "seconds": 1.0
+      },
+      "Post Configure BoringCache": {
+        "conclusion": "success",
+        "seconds": 2.0
+      },
+      "Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1": {
+        "conclusion": "success",
+        "seconds": 0.0
+      },
+      "Complete job": {
+        "conclusion": "success",
+        "seconds": 0.0
+      }
+    },
+    "evidence_directory": "evidence/marty-core/34357016445/artifacts/BoringCache-workspace-commit",
+    "doctests": {
+      "command": [
+        "cargo",
+        "test",
+        "--locked",
+        "--doc",
+        "--workspace",
+        "--exclude",
+        "marty-zkp",
+        "--exclude",
+        "marty-bindings",
+        "--features",
+        "test-fixtures"
+      ],
+      "elapsed_seconds": 4.772,
+      "exit_code": 0
+    },
+    "sccache": {
+      "stats": {
+        "compile_requests": 2434,
+        "requests_unsupported_compiler": 0,
+        "requests_not_compile": 6,
+        "requests_not_cacheable": 192,
+        "requests_executed": 2236,
+        "cache_errors": {
+          "counts": {
+            "Assembler": 1
+          },
+          "adv_counts": {
+            "assembler [gcc]": 1
+          }
+        },
+        "cache_hits": {
+          "counts": {
+            "Assembler": 251,
+            "C/C++": 1380,
+            "Rust": 598
+          },
+          "adv_counts": {
+            "rust": 598,
+            "assemblerToPreprocess [gcc]": 142,
+            "c [gcc]": 1380,
+            "assembler [gcc]": 109
+          }
+        },
+        "cache_misses": {
+          "counts": {
+            "C/C++": 1,
+            "Rust": 1
+          },
+          "adv_counts": {
+            "c [gcc]": 1,
+            "rust": 1
+          }
+        },
+        "cache_timeouts": 0,
+        "cache_read_errors": 0,
+        "non_cacheable_compilations": 0,
+        "forced_recaches": 0,
+        "cache_write_errors": 0,
+        "cache_writes": 2,
+        "cache_write_duration": {
+          "secs": 0,
+          "nanos": 25998249
+        },
+        "cache_read_hit_duration": {
+          "secs": 3,
+          "nanos": 610901523
+        },
+        "compilations": 2,
+        "compiler_write_duration": {
+          "secs": 0,
+          "nanos": 357753994
+        },
+        "compile_fails": 4,
+        "not_cached": {
+          "-": 10,
+          "-E": 2,
+          "crate-type": 171,
+          "-o": 3,
+          "missing input": 6
+        },
+        "dist_compiles": {},
+        "dist_errors": 0,
+        "multi_level": [
+          {
+            "name": "L0 (webdav)",
+            "location": "webdav, name: , prefix: /",
+            "hits": 2229,
+            "misses": 7,
+            "writes": 2,
+            "write_failures": 0,
+            "backfills_from": 0,
+            "backfills_to": 0,
+            "hit_duration": {
+              "secs": 3,
+              "nanos": 592533135
+            },
+            "write_duration": {
+              "secs": 0,
+              "nanos": 23082134
+            }
+          }
+        ]
+      },
+      "cache_location": "Multi-level (1 levels)",
+      "cache_size": null,
+      "max_cache_size": null,
+      "use_preprocessor_cache_mode": false,
+      "version": "0.17.0",
+      "basedirs": []
+    },
+    "rust_hits": 598,
+    "rust_misses": 1,
+    "rust_hit_percent": 99.8330550918197,
+    "cache_write_errors": 0,
+    "cache_read_errors": 0,
+    "cache_timeouts": 0,
+    "nextest_summary": [
+      " 122.380s] 1400 tests run: 1400 passed, 4 skipped"
+    ],
+    "product_evidence_files": [
+      "evidence/marty-core/34357016445/artifacts/BoringCache-workspace-commit/tmp/boringcache-one-evidence-251b5fbdef8fe0442e5c441cc7e0cbe0928042a06cd690ed73103e0ce0067cb7.json"
+    ],
+    "cli_versions": [
+      "v1.30.1"
+    ]
+  }
+]
