@@ -1,1 +1,5 @@
 workspace = "boringcache/marty-core"
+
+[adapters.sccache]
+tag = "validation-series"
+fail-on-cache-error = true
